@@ -1,0 +1,15 @@
+<h1> My Restaurants </h1>
+<% @restaurants.each do |restaurant| %>
+  <div class='list-box'>
+        <%= link_to restaurant.name, restaurant_path(restaurant) %>
+        <br>
+        <%= restaurant.category %>
+  </h2>
+  </div>
+  <br>
+
+<% end %>
+
+<br>
+
+<%= link_to 'Add a new restaurant', new_restaurant_path%>
